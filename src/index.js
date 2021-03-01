@@ -11,7 +11,7 @@ import './styles.scss';
 const store = createStore(reducer)
 const rootElement = document.getElementById('root');
 ReactDOM.render(
-    <Provider>
-        <App store={store}/>
+    <Provider store={store}>
+        <App />
     </Provider>, 
     rootElement);
